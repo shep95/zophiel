@@ -1,0 +1,71 @@
+[
+    {
+        "url": "https://www.winible.com/",
+        "status": "success",
+        "intel": {
+            "financial_triggers": [
+                "AfterPay",
+                "Klarna",
+                "Financing"
+            ],
+            "scam_markers": [
+                "profit"
+            ],
+            "tech_stack": [
+                "Discord_Integration",
+                "Telegram_Integration"
+            ]
+        },
+        "raw_text_preview": "Winible \u00e2\u0080\u0093 The Premier Destination for Buying and Selling Sports Content Features Testimonials About Us FAQ Login Apply Now Login Features Benefits Testimonials Pricing FAQ Login Features Benefits Testimonials Pricing FAQ join the winning team join the winning team T h e a l l - i n - o n e p l a t f o r m t o g r o w , m o n e t i z e , a n d s c a l e y o u r s p o r t s c o n t e n t b u s i n e s s . Apply Now Apply Now Apply Now Discover Creators Discover Creators Discover Creators Trusted"
+    },
+    {
+        "url": "https://www.winible.com/securedpicks",
+        "status": "success",
+        "intel": {
+            "financial_triggers": [],
+            "scam_markers": [],
+            "tech_stack": []
+        },
+        "raw_text_preview": "SecuredPicks"
+    },
+    {
+        "url": "https://www.winible.com/elitepickz",
+        "status": "success",
+        "intel": {
+            "financial_triggers": [],
+            "scam_markers": [],
+            "tech_stack": []
+        },
+        "raw_text_preview": "ElitePickz"
+    },
+    {
+        "url": "https://www.winible.com/elitepickzdfs",
+        "status": "success",
+        "intel": {
+            "financial_triggers": [],
+            "scam_markers": [],
+            "tech_stack": []
+        },
+        "raw_text_preview": "Elitepickz DFS"
+    },
+    {
+        "url": "https://tracxn.com/d/companies/winible/__lIo6giwk4R4ih35Vtg2AfYbXiKrptaIIFw-8VJIakaU",
+        "status": "success",
+        "intel": {
+            "financial_triggers": [],
+            "scam_markers": [],
+            "tech_stack": []
+        },
+        "raw_text_preview": "Winible - 2026 Company Profile, Team, Funding & Competitors - Tracxn JavaScript is disabled in your browser. enable it to enjoy the full features of Tracxn. Your browser was unable to load all of Tracxn resources. They may have been blocked by your firewall, proxy or browser configuration. Press Ctrl+F5 or Ctrl+Shift+R to have your browser try again and if that doesn't work, click here to retry or mail us at hi@tracxn.com Internal Server Error Toggle navigation Customers Investment Industry Vent"
+    },
+    {
+        "url": "https://www.linkedin.com/company/winible-inc",
+        "status": "success",
+        "intel": {
+            "financial_triggers": [],
+            "scam_markers": [],
+            "tech_stack": []
+        },
+        "raw_text_preview": "Winible | LinkedIn Skip to main content LinkedIn Top Content People Learning Jobs Games Get the app Sign in Join now Winible Software Development Creator monetization platform for sports betting creators to launch and scale their business. Join the winning team! Follow View all 24 employees Report this company About us Winible is the first creator monetization platform for sports betting creators to launch a business online, build a community, and sell their picks. Website https://www.winible.co"
+    }
+]

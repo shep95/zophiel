@@ -1,0 +1,31 @@
+[MIDJOURNEY RECONNAISSANCE LOG]
+
+[TARGET: API & GENERATION ENDPOINT]
+Status: IDENTIFIED
+Type: Discord Interaction API (Unofficial)
+Endpoint: POST https://discord.com/api/v9/interactions
+Auth: Requires 'SalaiToken' (Discord User Token) + Session ID
+Payload Structure:
+  - application_id: "936929561302675456" (Midjourney Bot)
+  - data.version: "938956540159881230" (Command Version)
+  - data.name: "imagine"
+
+[TARGET: GITHUB REPOSITORIES]
+Status: MAPPED
+
+1. OFFICIAL (Low Value - ML Research Only):
+   - https://github.com/midjourney/docs (Deprecated Wiki)
+   - https://github.com/midjourney/SageAttention (ML Optimization)
+   - https://github.com/midjourney/flash-attention-jax (JAX Implementation)
+   *NOTE: No source code for the web app or generation engine found here.*
+
+2. UNOFFICIAL / EXPLOITS (High Value):
+   - https://github.com/erictik/midjourney-api (Node.js Wrapper)
+   - https://github.com/yachty66/unofficial_midjourney_python_api (Python Wrapper)
+   - https://github.com/George-iam/Midjourney_api (Custom API)
+   *NOTE: These contain the reverse-engineered logic for the Discord interactions.*
+
+[NEXT STEPS]
+1. Use 'mj_console_dumper.js' to extract Discord Tokens from the browser.
+2. Feed tokens into 'mj_generate_exploit.py'.
+3. Investigate 'legacy.midjourney.com' or the new Web Alpha for alternative APIs.

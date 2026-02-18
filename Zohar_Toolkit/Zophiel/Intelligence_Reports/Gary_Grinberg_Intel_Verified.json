@@ -1,0 +1,24 @@
+{
+    "target": "Gary Grinberg",
+    "location_context": "Miami, Florida",
+    "timestamp": "2026-01-31T15:29:07.535113",
+    "confirmed_intelligence": [],
+    "unverified_leads": [],
+    "extracted_pii": {
+        "phones": [],
+        "emails": []
+    },
+    "timeline": [],
+    "cross_links": [],
+    "behavioral_profile": [],
+    "network_graph": {
+        "nodes": [
+            {
+                "id": "Gary Grinberg",
+                "group": "target",
+                "radius": 20
+            }
+        ],
+        "links": []
+    }
+}

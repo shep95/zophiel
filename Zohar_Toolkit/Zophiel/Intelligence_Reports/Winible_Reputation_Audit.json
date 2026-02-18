@@ -1,0 +1,74 @@
+[
+    {
+        "target": "securedpicks",
+        "status": "VULNERABLE",
+        "integrity_audit": {
+            "profit_claimed": 0,
+            "units_claimed": 0,
+            "win_percentage": null,
+            "is_verified": "VERIFIED",
+            "manual_spreadsheet_url": null
+        },
+        "pii_risk": {
+            "creator_email": null,
+            "creator_phone": null,
+            "stripe_id": null,
+            "telegram_link": null,
+            "discord_link": null,
+            "internal_user_id": "user5swktump"
+        },
+        "review_audit": []
+    },
+    {
+        "target": "elitepickz",
+        "status": "VULNERABLE",
+        "integrity_audit": {
+            "profit_claimed": 0,
+            "units_claimed": 0,
+            "win_percentage": null,
+            "is_verified": "VERIFIED",
+            "manual_spreadsheet_url": "https://www.elitepickz.com/"
+        },
+        "pii_risk": {
+            "creator_email": null,
+            "creator_phone": null,
+            "stripe_id": null,
+            "telegram_link": null,
+            "discord_link": "https://discord.gg/elitepickz",
+            "internal_user_id": "userxknpvvrw"
+        },
+        "review_audit": []
+    },
+    {
+        "target": "elitepickzdfs",
+        "status": "VULNERABLE",
+        "integrity_audit": {
+            "profit_claimed": 0,
+            "units_claimed": 0,
+            "win_percentage": null,
+            "is_verified": "VERIFIED",
+            "manual_spreadsheet_url": null
+        },
+        "pii_risk": {
+            "creator_email": null,
+            "creator_phone": null,
+            "stripe_id": null,
+            "telegram_link": null,
+            "discord_link": "https://discord.gg/elitepickzdfs",
+            "internal_user_id": "userersuk5d0"
+        },
+        "review_audit": []
+    },
+    {
+        "target": "https://www.winible.com/goldboys",
+        "status": "HTTP_404"
+    },
+    {
+        "target": "https://www.winible.com/masvet",
+        "status": "HTTP_404"
+    },
+    {
+        "target": "https://www.winible.com/cashmoney",
+        "status": "HTTP_404"
+    }
+]

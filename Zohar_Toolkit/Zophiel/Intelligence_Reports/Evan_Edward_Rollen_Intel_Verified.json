@@ -1,0 +1,24 @@
+{
+    "target": "Evan Edward Rollen",
+    "location_context": "Florida",
+    "timestamp": "2026-02-04T17:55:57.162718",
+    "confirmed_intelligence": [],
+    "unverified_leads": [],
+    "extracted_pii": {
+        "phones": [],
+        "emails": []
+    },
+    "timeline": [],
+    "cross_links": [],
+    "behavioral_profile": [],
+    "network_graph": {
+        "nodes": [
+            {
+                "id": "Evan Edward Rollen",
+                "group": "target",
+                "radius": 20
+            }
+        ],
+        "links": []
+    }
+}

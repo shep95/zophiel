@@ -1,0 +1,185 @@
+{
+  "https://grok.x.com": [
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/i18n/en.4647c4da.js",
+      "matches": {
+        "Models": [
+          "inference"
+        ],
+        "Internal": [
+          "admin",
+          "Admin",
+          "Dashboard",
+          "dashboard",
+          "Employee"
+        ],
+        "Auth": [
+          "sso"
+        ]
+      }
+    },
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/vendor.9240325a.js",
+      "matches": {
+        "Endpoints": [
+          "graphql"
+        ],
+        "Auth": [
+          "ssO"
+        ]
+      }
+    },
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/main.1ab552da.js",
+      "matches": {
+        "Models": [
+          "grok-media",
+          "grok-enhance",
+          "grok-transaction",
+          "grok-api"
+        ],
+        "Endpoints": [
+          "/i/api/2/grok/add_response",
+          "/i/api/graphql",
+          "/i/api/1",
+          "graphql"
+        ],
+        "Internal": [
+          "internal-static-assets",
+          "admin"
+        ],
+        "Auth": [
+          "auth_token",
+          "Bearer",
+          "oauth",
+          "Oauth",
+          "OAuth",
+          "sso",
+          "sSo"
+        ]
+      }
+    }
+  ],
+  "https://x.com": [
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/i18n/en.4647c4da.js",
+      "matches": {
+        "Models": [
+          "inference"
+        ],
+        "Internal": [
+          "admin",
+          "Admin",
+          "Dashboard",
+          "dashboard",
+          "Employee"
+        ],
+        "Auth": [
+          "sso"
+        ]
+      }
+    },
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/vendor.9240325a.js",
+      "matches": {
+        "Endpoints": [
+          "graphql"
+        ],
+        "Auth": [
+          "ssO"
+        ]
+      }
+    },
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/main.1ab552da.js",
+      "matches": {
+        "Models": [
+          "grok-media",
+          "grok-enhance",
+          "grok-transaction",
+          "grok-api"
+        ],
+        "Endpoints": [
+          "/i/api/2/grok/add_response",
+          "/i/api/graphql",
+          "/i/api/1",
+          "graphql"
+        ],
+        "Internal": [
+          "internal-static-assets",
+          "admin"
+        ],
+        "Auth": [
+          "auth_token",
+          "Bearer",
+          "oauth",
+          "Oauth",
+          "OAuth",
+          "sso",
+          "sSo"
+        ]
+      }
+    }
+  ],
+  "https://analytics.x.com": [
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/i18n/en.4647c4da.js",
+      "matches": {
+        "Models": [
+          "inference"
+        ],
+        "Internal": [
+          "admin",
+          "Admin",
+          "Dashboard",
+          "dashboard",
+          "Employee"
+        ],
+        "Auth": [
+          "sso"
+        ]
+      }
+    },
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/vendor.9240325a.js",
+      "matches": {
+        "Endpoints": [
+          "graphql"
+        ],
+        "Auth": [
+          "ssO"
+        ]
+      }
+    },
+    {
+      "url": "https://abs.twimg.com/responsive-web/client-web/main.1ab552da.js",
+      "matches": {
+        "Models": [
+          "grok-media",
+          "grok-enhance",
+          "grok-transaction",
+          "grok-api"
+        ],
+        "Endpoints": [
+          "/i/api/2/grok/add_response",
+          "/i/api/graphql",
+          "/i/api/1",
+          "graphql"
+        ],
+        "Internal": [
+          "internal-static-assets",
+          "admin"
+        ],
+        "Auth": [
+          "auth_token",
+          "Bearer",
+          "oauth",
+          "Oauth",
+          "OAuth",
+          "sso",
+          "sSo"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+[CONFIDENTIAL] X CORP / OPENAI SHARED INFRASTRUCTURE ANALYSIS
+TARGET: Money API (Stripe) & Feature Flag System
+DATE: 2026-01-30
+
+================================================================================
+1. THE UNIVERSAL FEATURE FLAG SWITCH (AUTH BYPASS)
+================================================================================
+We have reverse-engineered the client-side feature flag parser in `main_bundle.js`.
+
+LOGIC EXTRACTED:
+   t.resources.forEach((e => {
+       const [type, name, value] = e.split("/");
+       "client_feature_switch" === type && (n.features[name] = { value: value })
+   }))
+
+EXPLOIT VECTOR:
+To enable restricted features, we must inject a string into the `resources` array of the user session/config object.
+
+PAYLOAD FORMAT:
+   client_feature_switch/<FEATURE_NAME>/<VALUE>
+
+TARGET PAYLOADS:
+   - Deep Research: "client_feature_switch/deep_research_in_context_upsell/true"
+   - God Mode:      "client_feature_switch/can_access_payments/true"
+   - Testing:       "client_feature_switch/subscriptions_stripe_testing/true"
+
+================================================================================
+2. THE MONEY API (STRIPE & TRANSACTIONS)
+================================================================================
+Internal endpoints for financial operations (Grok/X Payments).
+
+STRIPE LIVE KEY:
+   pk_live_51Ika5JA3KZ32dPo1Uxw4aqV0ZMlJ6ATznaCs2P3nJCtDAwj6qw0ACmoab3PrB9eGfrWmxHVtrcWZcSohktLW26Ji00g
+
+INTERNAL ENDPOINTS:
+   - Update Creds:  POST /i/money/credentials/:credentialId/update
+   - Create Creds:  POST /i/money/credentials/create
+   - Transaction History: GET /i/money/grok-transaction-search-history
+   - Consent:       POST /i/money/consent
+   - Re-onboard:    POST /i/money/reonboard
+   - Chat Payment:  POST /i/money/chat
+
+GRAPHQL FIELDS (For Account Elevation):
+   - xpayments_enrolled
+   - can_access_payments
+   - super_follows_application_status
+
+================================================================================
+3. SUBSCRIPTION CLAIM MAPPING
+================================================================================
+The system maps "claims" (likely from JWTs) to subscription tiers.
+
+   - Verified Org (Gov): "verified-organizations-gov-prod-1"
+   - Twitter Blue:       "rogue-one-prod-1"
+   - Legacy Blue:        "rogue-one-test-1"
+
+================================================================================
+ACTION ITEMS:
+1. Intercept the `/i/api/1.1/account/settings` or equivalent init call.
+2. Inject the "resources" array with target payloads.
+3. Force reload to activate features.

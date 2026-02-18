@@ -1,0 +1,30 @@
+{
+  "internal_domains": [
+    "model-spec.openai.com",
+    "projectHomeTabs.internal",
+    "allConnectors.internal",
+    "this.internal",
+    "s.internal",
+    "eo.Internal",
+    "files.openai.com",
+    "images.openai.com",
+    "Co.internal",
+    "sentinel.openai.com",
+    "e.INTERNAL",
+    "Gn.Internal",
+    "t.INTERNAL",
+    "privacy.openai.com",
+    "e.internal",
+    "c.internal",
+    "FM.INTERNAL",
+    "t.Internal",
+    "PromptTextarea.internal",
+    "e.Internal",
+    "qN.INTERNAL",
+    "Ye.internal"
+  ],
+  "emails": [
+    "support@openai.com"
+  ],
+  "slack_refs": []
+}

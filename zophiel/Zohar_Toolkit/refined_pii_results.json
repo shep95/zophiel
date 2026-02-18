@@ -1,0 +1,74 @@
+[
+  {
+    "type": "phone_strict",
+    "value": "\"2231777543\"",
+    "url": "https://grok.x.com/i/api/2/grok/add_response",
+    "method": "GET"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"1661819456366\"",
+    "url": "https://grok.x.com/i/api/2/grok/add_response",
+    "method": "GET"
+  },
+  {
+    "type": "uuid",
+    "value": "\"f3b48369-4918-4734-81f3-2d35f683d8c0\"",
+    "url": "https://grok.x.com/i/api/2/grok/add_response",
+    "method": "GET"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"2231777543\"",
+    "url": "https://grok.x.com/i/api/2/grok/add_response",
+    "method": "POST"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"1661819456366\"",
+    "url": "https://grok.x.com/i/api/2/grok/add_response",
+    "method": "POST"
+  },
+  {
+    "type": "uuid",
+    "value": "\"f3b48369-4918-4734-81f3-2d35f683d8c0\"",
+    "url": "https://grok.x.com/i/api/2/grok/add_response",
+    "method": "POST"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"2231777543\"",
+    "url": "https://grok.x.com/i/api/graphql",
+    "method": "GET"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"1661819456366\"",
+    "url": "https://grok.x.com/i/api/graphql",
+    "method": "GET"
+  },
+  {
+    "type": "uuid",
+    "value": "\"f3b48369-4918-4734-81f3-2d35f683d8c0\"",
+    "url": "https://grok.x.com/i/api/graphql",
+    "method": "GET"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"2231777543\"",
+    "url": "https://grok.x.com/i/api/graphql",
+    "method": "POST"
+  },
+  {
+    "type": "phone_strict",
+    "value": "\"1661819456366\"",
+    "url": "https://grok.x.com/i/api/graphql",
+    "method": "POST"
+  },
+  {
+    "type": "uuid",
+    "value": "\"f3b48369-4918-4734-81f3-2d35f683d8c0\"",
+    "url": "https://grok.x.com/i/api/graphql",
+    "method": "POST"
+  }
+]

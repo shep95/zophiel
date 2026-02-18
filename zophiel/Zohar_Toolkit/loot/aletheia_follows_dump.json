@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a71e2ded-a13a-42e0-b0a4-5f548e3da324",
+    "follower_id": "c9f5cdc0-808e-47cb-b106-a7a263a8752e",
+    "following_id": "85eb5624-5383-41ec-845a-cd4b5b9ca828",
+    "created_at": "2026-01-13T22:30:39.692687+00:00"
+  },
+  {
+    "id": "eecca996-3811-44a3-85a0-93334f8293ba",
+    "follower_id": "c9f5cdc0-808e-47cb-b106-a7a263a8752e",
+    "following_id": "9d041443-b924-4447-bef2-46cf38513b4a",
+    "created_at": "2026-01-13T22:31:21.411845+00:00"
+  },
+  {
+    "id": "72f69d5f-4b47-413a-ab07-bb5869dede69",
+    "follower_id": "c9f5cdc0-808e-47cb-b106-a7a263a8752e",
+    "following_id": "7f974272-ab82-4b15-8a2d-d62af6789542",
+    "created_at": "2026-01-21T10:48:47.087351+00:00"
+  },
+  {
+    "id": "1487f284-9460-4239-b375-213486af7ef0",
+    "follower_id": "9d041443-b924-4447-bef2-46cf38513b4a",
+    "following_id": "77d78021-1e32-48f4-9126-6ce5b2b8e988",
+    "created_at": "2026-01-23T04:13:00.098525+00:00"
+  }
+]

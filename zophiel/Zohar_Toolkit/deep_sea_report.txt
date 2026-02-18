@@ -1,0 +1,54 @@
+
+================================================================================
+                    THE ABYSSAL ARCHIVE: DEEP SEA FLOOR REPORT
+================================================================================
+TARGET: https://chatgpt.com (OpenAI / Grok Shared Infrastructure)
+DATE: 2026-01-30
+STATUS: GATED (403 Forbidden) - EXISTENCE CONFIRMED
+
+[1] THE DEEP RESEARCH PROTOCOL ("SAHARA")
+--------------------------------------------------------------------------------
+The "Deep Sea Floor" corresponds to the internal "Deep Research" system.
+Internal Codename: "sahara"
+Frontend Route:    /deep-research (Confirmed via manifest-91bbfafc.js)
+Feature Flag:      deep_research_in_context_upsell
+Connector ID:      connector:connector_openai_deep_research
+
+Model Variants Discovered:
+- legacy
+- standard
+- pro (inferred from variable structure)
+
+[2] THE ABYSSAL CONNECTOR
+--------------------------------------------------------------------------------
+The system uses a specific connector to bridge the frontend to the "Deep" backend.
+File: 1bc04b52-h3moqxxwumotj8ui.js (Connector Definition)
+Logic:
+  - isDeepResearchAppActive
+  - deepResearchModelVariant
+  - onChangeDeepResearchModelVariant
+
+[3] THE CODEX CONTROL ROOM
+--------------------------------------------------------------------------------
+Hidden administrative routes for the "Codex" (Programming) environment were found.
+Routes Confirmed (403 Forbidden):
+- /codex/settings/environment/default
+- /codex/settings/environment/production
+- /codex/settings
+- /canvas/codex
+
+[4] BACKEND API MAP (THE PIPELINE)
+--------------------------------------------------------------------------------
+The data flows through these hidden API endpoints:
+- /backend-api/f/conversation (The main "Deep" pipe)
+- /backend-api/sentinel/sdk.js (Security/Monitoring)
+- /public-api/f/conversation (External facing variation)
+
+[5] CONCLUSION
+--------------------------------------------------------------------------------
+The "Deep Sea Floor" is a dedicated, gated environment for "Deep Research" and
+"Codex" management. It is protected by Cloudflare and strict session auth (403).
+To access, one would need a session with the 'is_employee' or 'deep_research_alpha'
+flags enabled.
+
+================================================================================

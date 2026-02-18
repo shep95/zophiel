@@ -1,0 +1,2 @@
+import{c as m,j as d}from"./2340486e-n0khdanno9uzbccp.js";import{C as l}from"./249dce54-kgb10ms7yx2seq62.js";function x(p){"use forget";const t=m.c(6),{children:o,className:n,contentWidth:a,ariaLabelledby:s,spacingAbove:r}=p,i=a===void 0?"wide":a,c=r===void 0?"spacious":r;let e;return t[0]!==s||t[1]!==o||t[2]!==n||t[3]!==i||t[4]!==c?(e=d.jsx(l,{className:n,spacingAbove:c,contentWidth:i,ariaLabelledby:s,children:o}),t[0]=s,t[1]=o,t[2]=n,t[3]=i,t[4]=c,t[5]=e):e=t[5],e}export{x as F};
+//# sourceMappingURL=0bb44966-nomjbrnmr4xambs9.js.map

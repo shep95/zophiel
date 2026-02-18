@@ -1,0 +1,812 @@
+{
+    "meta": {
+        "version": "1.2",
+        "created_at": "2026-01-29 22:26:58.430913",
+        "last_updated": "2026-01-29 22:45:00.000000",
+        "objective": "Bypass OpenAI WAF/Auth on Internal Gateways",
+        "status": "ACTIVE_RECON"
+    },
+    "arsenal": {
+        "ghost_headers": {
+            "X-OpenAI-Client-User-Agent": "{\"bindings_version\": \"1.0.0\", \"httplib\": \"requests\", \"lang\": \"python\", \"lang_version\": \"3.10.0\", \"platform\": \"Windows\"}",
+            "X-OpenAI-Internal-ID": "canary-admin-001",
+            "X-Url-Path": "/v1/responses",
+            "X-OpenAI-Internal-Request-Id": "req_ZoharProbe_001",
+            "X-Authorization-Scope": "internal"
+        },
+        "discovered_headers": [
+            "X-Conduit-Token",
+            "X-Remix-Revalidate",
+            "X-Remix-Response",
+            "X-B3-TraceId",
+            "OAI-Product-Sku",
+            "OAI-Client-Version",
+            "OAI-Echo-Logs",
+            "OAI-Device-Id",
+            "X-Remix-Replace",
+            "OAI-Client-Build-Number",
+            "X-Remix-Status",
+            "X-XSRF-TOKEN",
+            "X-Request-Id",
+            "X-Remix-Redirect",
+            "X-B3-SpanId",
+            "X-B3-Sampled",
+            "OAI-Language",
+            "X-Remix-Reload-Document"
+        ],
+        "cookies": {
+            "oai-did": "d41d8cd98f00b204e9800998ecf8427e"
+        }
+    },
+    "targets": {
+        "chat-onramp.unified-6.api.openai.com": {
+            "description": "Primary entry point for Stateful Responses API",
+            "status": "403 Forbidden (WAF Active)",
+            "successful_bypass": false,
+            "notes": "Requires valid OAI-Device-Id signature. Ghost Headers rejected.",
+            "tested_vectors": [
+                {
+                    "vector": "POST /v1/responses",
+                    "status_code": 403,
+                    "payload_hash": "74393122"
+                }
+            ]
+        },
+        "deep-research-landing": {
+            "description": "Future Model / Feature Landing Page",
+            "url": "https://chatgpt.com/deep-research",
+            "status": "DISCOVERED",
+            "notes": "Found in manifest-91bbfafc.js. Codename: 'deep-research'."
+        },
+        "sahara-model-codename": {
+            "description": "Unreleased Model Codename",
+            "status": "DISCOVERED",
+            "notes": "Found in JS bundles. Likely associated with 'deep-research' or next-gen reasoning."
+        },
+        "higherlevelapi-canary": {
+            "description": "Control Plane (Internal)",
+            "status": "404 Not Found (Obfuscated)",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "openai.blob.core.windows.net": {
+            "description": "Azure Blob Storage (Assets)",
+            "status": "403 Forbidden (Private)",
+            "successful_bypass": false,
+            "notes": "Container exists but is locked."
+        },
+        "https://model-spec.openai.com": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://projectHomeTabs.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://allConnectors.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://this.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://s.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://eo.Internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://files.openai.com": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://images.openai.com": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://Co.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://sentinel.openai.com": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://e.INTERNAL": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://Gn.Internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://t.INTERNAL": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://privacy.openai.com": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://e.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://c.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://FM.INTERNAL": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://t.Internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://PromptTextarea.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://e.Internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://qN.INTERNAL": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://Ye.internal": {
+            "description": "Internal Domain Discovery",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "https://chatgpt.com/deep-research": {
+            "description": "Deep Research Landing Page",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:09:18.693863",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-7629988"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:19.430567",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "40389653"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:20.172985",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-2215713"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:20.917674",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "14249586"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:21.690190",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4997873"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:22.481081",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-2938847"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:23.255414",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "25052544"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:23.997382",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "54265907"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:24.805740",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-8069387"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:25.574713",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-6826918"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:26.325174",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-8981042"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:27.102578",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-9330145"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:27.839537",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "49838758"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:28.634206",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-3466271"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:29.382718",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4387791"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:30.164211",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4745153"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:30.931274",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "19216240"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:31.672691",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "13757694"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:32.423258",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-1859723"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:33.205539",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "78222511"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:33.982191",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-7755923"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:34.721371",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4762559"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:35.524174",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4753862"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:36.275935",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "43290547"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:37.052785",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-1836238"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:37.789954",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4288058"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:38.561263",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "44480129"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:39.320965",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-1907205"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:40.071542",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-7917294"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:40.824015",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "16507596"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:41.561328",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "27503926"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:42.353368",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-8901353"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:43.132418",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "56056057"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:43.951436",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "26908841"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:44.696223",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "95931443"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:45.499586",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-5344892"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:46.282311",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-6797613"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:47.018498",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "24985924"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:47.888460",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "10651137"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:48.615881",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "66031357"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:49.376977",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "73401020"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:50.262424",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-6363102"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:50.995566",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "83907471"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:51.763449",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4789080"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:52.514992",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-6097446"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:53.294182",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-3900260"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:54.033985",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-3030749"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:54.881136",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "19893417"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:55.674039",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-2134964"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:56.459717",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "67003889"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:57.324789",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-8530579"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:58.117145",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-1845040"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:58.880316",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-5794790"
+                },
+                {
+                    "timestamp": "2026-01-29 23:09:59.666034",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-4114987"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:00.400358",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-1921951"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:01.180282",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "16962215"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:01.938365",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "42632874"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:02.679891",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-9178654"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:03.436930",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "15693203"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:04.209845",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "51144695"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:04.970532",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-6722469"
+                },
+                {
+                    "timestamp": "2026-01-29 23:10:05.733315",
+                    "vector": "Header Injection",
+                    "status_code": "302",
+                    "payload_hash": "-8665686"
+                }
+            ]
+        },
+        "https://chatgpt.com/features/deep-research/": {
+            "description": "Deep Research API Endpoint",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:40.381265",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "-6699784"
+                },
+                {
+                    "timestamp": "2026-01-29 23:22:41.028376",
+                    "vector": "Feature Fuzz (POST)",
+                    "status_code": "405",
+                    "payload_hash": "-6699784"
+                },
+                {
+                    "timestamp": "2026-01-29 23:22:41.722875",
+                    "vector": "Feature Fuzz (HEAD)",
+                    "status_code": "200",
+                    "payload_hash": "-6699784"
+                },
+                {
+                    "timestamp": "2026-01-29 23:22:42.271515",
+                    "vector": "Feature Fuzz (OPTIONS)",
+                    "status_code": "204",
+                    "payload_hash": "-6699784"
+                },
+                {
+                    "timestamp": "2026-01-29 23:22:42.921385",
+                    "vector": "Feature Fuzz (PUT)",
+                    "status_code": "405",
+                    "payload_hash": "-6699784"
+                }
+            ]
+        },
+        "https://chatgpt.com/features/deep-research/?debug=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:33.602068",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "-7618307"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?test=1": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:34.345865",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "-4162958"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?internal=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:35.025879",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "81733231"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?beta=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:35.880543",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "-4307320"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?feature_gate=open": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:36.824039",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "71611449"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?bypass=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:37.592162",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "54620094"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?preview=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:38.288844",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "37203636"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?admin=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:38.994111",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "-8856648"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/?no_auth=true": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:39.700772",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "200",
+                    "payload_hash": "-4981713"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/index.html": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:43.550763",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "404",
+                    "payload_hash": "53069872"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/manifest.json": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:44.177620",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "404",
+                    "payload_hash": "15061268"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/config.json": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:44.824700",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "404",
+                    "payload_hash": "53717167"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/debug": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:45.379281",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "404",
+                    "payload_hash": "35063287"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "https://chatgpt.com/features/deep-research/.git/HEAD": {
+            "tested_vectors": [
+                {
+                    "timestamp": "2026-01-29 23:22:46.026044",
+                    "vector": "Feature Fuzz (GET)",
+                    "status_code": "404",
+                    "payload_hash": "87274753"
+                }
+            ],
+            "status": "Unknown"
+        },
+        "/cdn/assets/85c26ade-hrz1iksdfqxhc4xf.js": {
+            "description": "JS Bundle found in Deep Research Landing",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "/cdn/assets/93527649-d6uunnbv2hve0bim.js": {
+            "description": "JS Bundle found in Deep Research Landing",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        },
+        "/cdn/assets/36bd7498-iisbh872a4zo2037.js": {
+            "description": "JS Bundle found in Deep Research Landing",
+            "status": "Untested",
+            "successful_bypass": false,
+            "tested_vectors": []
+        }
+    },
+    "intelligence": {
+        "codenames": [
+            "sahara",
+            "deep-research"
+        ],
+        "tools": [
+            "linear.app"
+        ],
+        "routes": [
+            "/deep-research",
+            "/($lang).deep-research"
+        ]
+    }
+}

@@ -1,0 +1,253 @@
+[
+    {
+        "url": "https://www.winible.com/",
+        "status": "success",
+        "next_data_preview": null,
+        "full_next_data": {},
+        "exposed_keys": {},
+        "pricing_tiers": [
+            "Boost conversion on packages priced from $50-$10k"
+        ],
+        "social_proof": []
+    },
+    {
+        "url": "https://www.winible.com/securedpicks",
+        "status": "success",
+        "next_data_preview": "{'props': {'pageProps': {'meta': {'title': 'SecuredPicks', 'description': 'Join the top 1% w/ SecuredTys', 'twitter_title': 'SecuredPicks', 'store': {'storeName': 'SecuredPicks', 'avatarUrl': 'https://winible-posts-v2.s3.us-west-1.amazonaws.com/1499879200104927682-8b8caa89-60fe-4974-87df-12a0c525a18c.jpeg'}, 'og_url': 'https://www.winible.com/securedpicks', 'themeColor': '#1A1B21'}, 'store': {'id': '1499879642847269869', 'creatorId': '1499879200104927682', 'storeName': 'SecuredPicks', 'storeUrl'",
+        "full_next_data": {
+            "props": {
+                "pageProps": {
+                    "meta": {
+                        "title": "SecuredPicks",
+                        "description": "Join the top 1% w/ SecuredTys",
+                        "twitter_title": "SecuredPicks",
+                        "store": {
+                            "storeName": "SecuredPicks",
+                            "avatarUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1499879200104927682-8b8caa89-60fe-4974-87df-12a0c525a18c.jpeg"
+                        },
+                        "og_url": "https://www.winible.com/securedpicks",
+                        "themeColor": "#1A1B21"
+                    },
+                    "store": {
+                        "id": "1499879642847269869",
+                        "creatorId": "1499879200104927682",
+                        "storeName": "SecuredPicks",
+                        "storeUrl": "securedpicks",
+                        "bio": "I'm the 20 year old sports bettor who turned $1K into a $400,000 Lamborghini\ud83c\udfce\ufe0f",
+                        "headline": "Join the top 1% w/ SecuredTys",
+                        "sportsTags": [
+                            "Football",
+                            "Basketball",
+                            "Soccer",
+                            "Tennis",
+                            "Live Betting"
+                        ],
+                        "avatarUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1499879200104927682-8b8caa89-60fe-4974-87df-12a0c525a18c.jpeg",
+                        "twitterUrl": null,
+                        "tiktokUrl": "https://tiktok.com/@degentyson",
+                        "instagramUrl": "https://instagram.com/securedtys",
+                        "youtubeUrl": "https://youtube.com/@securedtyson",
+                        "discordUrl": null,
+                        "telegramUrl": null,
+                        "personalSiteUrl": null,
+                        "bannerImageUrl": "https://vimeo.com/1001984905?share=copy",
+                        "videoUrl": null,
+                        "stateCode": null,
+                        "profit": 0,
+                        "units": 0,
+                        "winPercentage": null,
+                        "sportsHeadline": "Providing Picks For",
+                        "aboutHeadline": "About SecuredTyson",
+                        "aboutDescription": "CEO of SecuredPicks, the largest sports betting community in the world with over 170,000+ members. SecuredTyson is the 20 year old sports bettor who turned $1K into a $400,000 Lamborghini in under 60 days \ud83c\udfce\ufe0f",
+                        "aboutBannerImageUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1499879200104927682-528a98d1-f637-4258-9652-9a926abc0aac.jpeg",
+                        "hasFreePlan": true,
+                        "affiliateLinks": null,
+                        "brandVoice": "SecuredPicks is the world\u2019s largest sports betting community, led by 20-year-old phenom SecuredTyson, who famously turned $1K into a $400,000 Lamborghini in just 60 days. The brand\u2019s voice is bold, aspirational, and energetic, inspiring bettors to join the top 1% with expert picks in football, basketball, soccer, tennis, and live betting.",
+                        "customizations": {
+                            "desktopLayout": "vertical"
+                        },
+                        "verifyStatus": "VERIFIED",
+                        "createdAt": "2025-09-25T21:56:39.862Z",
+                        "updatedAt": "2025-10-07T15:24:24.325Z",
+                        "user": {
+                            "username": "user5swktump"
+                        }
+                    },
+                    "conversionEnabled": false,
+                    "_sentryTraceData": "b2563ca9c71047cb96fe06ef32b97f17-a6617897eeaf70a2-1",
+                    "_sentryBaggage": "sentry-environment=vercel-production,sentry-release=de2ed47d538cdab5957ad24fbcb6dd08a4f157f9,sentry-public_key=69cbe4927c024a809ccdede45ec53ce4,sentry-trace_id=b2563ca9c71047cb96fe06ef32b97f17,sentry-sample_rate=1,sentry-transaction=%2F%5BstoreUrl%5D,sentry-sampled=true"
+                },
+                "__N_SSP": true
+            },
+            "page": "/[storeUrl]",
+            "query": {
+                "storeUrl": "securedpicks"
+            },
+            "buildId": "xrTUwDsst469lW0hx2gqq",
+            "isFallback": false,
+            "gssp": true,
+            "scriptLoader": []
+        },
+        "exposed_keys": {},
+        "pricing_tiers": [],
+        "social_proof": []
+    },
+    {
+        "url": "https://www.winible.com/elitepickz",
+        "status": "success",
+        "next_data_preview": "{'props': {'pageProps': {'meta': {'title': 'ElitePickz', 'description': 'As Seen In US Insider, New York Weekly, and More', 'twitter_title': 'ElitePickz', 'store': {'storeName': 'ElitePickz', 'avatarUrl': 'https://winible-posts-v2.s3.us-west-1.amazonaws.com/1352274155352904454-c5dfb0e8-693a-4f54-9cb1-37817e9ff88d-Elite-Pickz%202.PNG'}, 'og_url': 'https://www.winible.com/elitepickz', 'themeColor': '#1A1B21'}, 'store': {'id': '1352274840693789597', 'creatorId': '1352274155352904454', 'storeName': ",
+        "full_next_data": {
+            "props": {
+                "pageProps": {
+                    "meta": {
+                        "title": "ElitePickz",
+                        "description": "As Seen In US Insider, New York Weekly, and More",
+                        "twitter_title": "ElitePickz",
+                        "store": {
+                            "storeName": "ElitePickz",
+                            "avatarUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1352274155352904454-c5dfb0e8-693a-4f54-9cb1-37817e9ff88d-Elite-Pickz%202.PNG"
+                        },
+                        "og_url": "https://www.winible.com/elitepickz",
+                        "themeColor": "#1A1B21"
+                    },
+                    "store": {
+                        "id": "1352274840693789597",
+                        "creatorId": "1352274155352904454",
+                        "storeName": "ElitePickz",
+                        "storeUrl": "elitepickz",
+                        "bio": "Our sports picks will finish positive in your first 30 days, or your money back. Head to elitepickz.com for full details",
+                        "headline": "As Seen In US Insider, New York Weekly, and More",
+                        "sportsTags": [
+                            "Football"
+                        ],
+                        "avatarUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1352274155352904454-c5dfb0e8-693a-4f54-9cb1-37817e9ff88d-Elite-Pickz%202.PNG",
+                        "twitterUrl": null,
+                        "tiktokUrl": null,
+                        "instagramUrl": "https://instagram.com/elitepickz",
+                        "youtubeUrl": null,
+                        "discordUrl": "https://discord.gg/elitepickz",
+                        "telegramUrl": null,
+                        "personalSiteUrl": "https://www.elitepickz.com/",
+                        "bannerImageUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1352274155352904454-d17a98ed-b059-4498-9fff-d63cbedb656c-invite%20%283%29.jpg",
+                        "videoUrl": null,
+                        "stateCode": null,
+                        "profit": 0,
+                        "units": 0,
+                        "winPercentage": null,
+                        "sportsHeadline": "Providing Picks For",
+                        "aboutHeadline": "About Elitepickz",
+                        "aboutDescription": "Why join us? We have VIDEO PROOF on Youtube of our founder being banned from multiple casinos like BetMGM for winning too much. We have public spreadsheets tracking every win and loss (who else does this?). We have a 30 day money back guarantee if we aren't profitable as tracked in our spreadsheet at the end of your pass. ",
+                        "aboutBannerImageUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1352274155352904454-3e3c022a-5160-4e96-8b1b-4e373c571324-Elite-Pickz.PNG",
+                        "hasFreePlan": true,
+                        "affiliateLinks": null,
+                        "brandVoice": null,
+                        "customizations": null,
+                        "verifyStatus": "VERIFIED",
+                        "createdAt": "2024-08-14T14:27:52.668Z",
+                        "updatedAt": "2024-08-27T12:35:35.118Z",
+                        "user": {
+                            "username": "userxknpvvrw"
+                        }
+                    },
+                    "conversionEnabled": false,
+                    "_sentryTraceData": "9efc5ea7d9b4411e886a6b574906581d-8a16f66b1cb24ea2-1",
+                    "_sentryBaggage": "sentry-environment=vercel-production,sentry-release=de2ed47d538cdab5957ad24fbcb6dd08a4f157f9,sentry-public_key=69cbe4927c024a809ccdede45ec53ce4,sentry-trace_id=9efc5ea7d9b4411e886a6b574906581d,sentry-sample_rate=1,sentry-transaction=%2F%5BstoreUrl%5D,sentry-sampled=true"
+                },
+                "__N_SSP": true
+            },
+            "page": "/[storeUrl]",
+            "query": {
+                "storeUrl": "elitepickz"
+            },
+            "buildId": "xrTUwDsst469lW0hx2gqq",
+            "isFallback": false,
+            "gssp": true,
+            "scriptLoader": []
+        },
+        "exposed_keys": {},
+        "pricing_tiers": [],
+        "social_proof": []
+    },
+    {
+        "url": "https://www.winible.com/elitepickzdfs",
+        "status": "success",
+        "next_data_preview": "{'props': {'pageProps': {'meta': {'title': 'Elitepickz DFS', 'description': 'Leverage AI To Profit From Player Props!', 'twitter_title': 'Elitepickz DFS', 'store': {'storeName': 'Elitepickz DFS', 'avatarUrl': 'https://winible-posts-v2.s3.us-west-1.amazonaws.com/1246495127657010009-1ac6a7a3-e0c6-4279-8114-a25326e278bd-DFS%20logo.png'}, 'og_url': 'https://www.winible.com/elitepickzdfs', 'themeColor': '#1A1B21'}, 'store': {'id': '1246495555509572448', 'creatorId': '1246495127657010009', 'storeName'",
+        "full_next_data": {
+            "props": {
+                "pageProps": {
+                    "meta": {
+                        "title": "Elitepickz DFS",
+                        "description": "Leverage AI To Profit From Player Props!",
+                        "twitter_title": "Elitepickz DFS",
+                        "store": {
+                            "storeName": "Elitepickz DFS",
+                            "avatarUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1246495127657010009-1ac6a7a3-e0c6-4279-8114-a25326e278bd-DFS%20logo.png"
+                        },
+                        "og_url": "https://www.winible.com/elitepickzdfs",
+                        "themeColor": "#1A1B21"
+                    },
+                    "store": {
+                        "id": "1246495555509572448",
+                        "creatorId": "1246495127657010009",
+                        "storeName": "Elitepickz DFS",
+                        "storeUrl": "elitepickzdfs",
+                        "bio": "750+ units of profit since launch in 2024, all results 3rd party verified by Pikkit  ",
+                        "headline": "Leverage AI To Profit From Player Props!",
+                        "sportsTags": [
+                            "Football",
+                            "Basketball",
+                            "Baseball",
+                            "Ice Hockey",
+                            "Golf"
+                        ],
+                        "avatarUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1246495127657010009-1ac6a7a3-e0c6-4279-8114-a25326e278bd-DFS%20logo.png",
+                        "twitterUrl": null,
+                        "tiktokUrl": null,
+                        "instagramUrl": "https://instagram.com/nflpollnation",
+                        "youtubeUrl": "https://youtube.com/@bill-harrelson",
+                        "discordUrl": "https://discord.gg/elitepickzdfs",
+                        "telegramUrl": null,
+                        "personalSiteUrl": null,
+                        "bannerImageUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1246495127657010009-817cee36-ab1f-4845-a8de-efbf4b17e6ee-Elite_Pickz_DFS.png",
+                        "videoUrl": null,
+                        "stateCode": null,
+                        "profit": 0,
+                        "units": 0,
+                        "winPercentage": null,
+                        "sportsHeadline": "Providing Picks For",
+                        "aboutHeadline": "About Elitepickz DFS",
+                        "aboutDescription": "Our team has been banned/limited from multiple casinos such as BetMGM, BetRivers, and more (you can find proof on our youtube). \n\nDFS apps like Prize Picks are newer to the market, and easier to take advantage of if you know the math behind it all. \n\nBy joining, you will get direct access to the Elitepickz team, and our dedicated DFS analyst who is leveraging artificial intelligence to beat these apps every day.\n\nYou can track our results for PROOF of profitability on pikkit, username is @banjo",
+                        "aboutBannerImageUrl": "https://winible-posts-v2.s3.us-west-1.amazonaws.com/1246495127657010009-2c096e8d-7904-499a-9d13-709275b68f9e-DFS%20logo.png",
+                        "hasFreePlan": true,
+                        "affiliateLinks": null,
+                        "brandVoice": "Elitepickz DFS delivers a bold, data-driven edge in daily fantasy sports, leveraging AI and expert analysis to consistently outsmart the competition. With a proven track record and full transparency, they empower members to profit from player props across football, basketball, baseball, hockey, and golf.",
+                        "customizations": {
+                            "desktopLayout": "default"
+                        },
+                        "verifyStatus": "VERIFIED",
+                        "createdAt": "2023-10-27T16:58:45.794Z",
+                        "updatedAt": "2025-11-24T19:41:28.774Z",
+                        "user": {
+                            "username": "userersuk5d0"
+                        }
+                    },
+                    "conversionEnabled": true,
+                    "_sentryTraceData": "1b08b590631540cfb0583af5216bc2ca-983fb9ff263d49e3-1",
+                    "_sentryBaggage": "sentry-environment=vercel-production,sentry-release=de2ed47d538cdab5957ad24fbcb6dd08a4f157f9,sentry-public_key=69cbe4927c024a809ccdede45ec53ce4,sentry-trace_id=1b08b590631540cfb0583af5216bc2ca,sentry-sample_rate=1,sentry-transaction=%2F%5BstoreUrl%5D,sentry-sampled=true"
+                },
+                "__N_SSP": true
+            },
+            "page": "/[storeUrl]",
+            "query": {
+                "storeUrl": "elitepickzdfs"
+            },
+            "buildId": "xrTUwDsst469lW0hx2gqq",
+            "isFallback": false,
+            "gssp": true,
+            "scriptLoader": []
+        },
+        "exposed_keys": {},
+        "pricing_tiers": [],
+        "social_proof": []
+    }
+]

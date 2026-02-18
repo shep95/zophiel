@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ff601df8-ec2f-4e48-8aa1-094dc9794381",
+    "name": "Technology",
+    "slug": "tech",
+    "description": "Tech news, startups, and innovation",
+    "icon": "\ud83d\udcbb",
+    "color": "#3B82F6",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "8e0b21c2-4300-44dd-9de8-9f8ebb57211e",
+    "name": "Politics",
+    "slug": "politics",
+    "description": "Political discussions and news",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "color": "#EF4444",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "162e231e-015e-4bcf-a942-38c4e5c62b74",
+    "name": "Sports",
+    "slug": "sports",
+    "description": "Sports news and discussions",
+    "icon": "\u26bd",
+    "color": "#22C55E",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "7381f950-5797-4a41-ae35-95414ca90abe",
+    "name": "Music",
+    "slug": "music",
+    "description": "Music discussions and discoveries",
+    "icon": "\ud83c\udfb5",
+    "color": "#A855F7",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "1fcc08b8-ad1b-45a8-9ca9-94284fc91f87",
+    "name": "Gaming",
+    "slug": "gaming",
+    "description": "Video games and gaming culture",
+    "icon": "\ud83c\udfae",
+    "color": "#F59E0B",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "b9317e45-a466-4116-ad6c-a3eb38a4cf80",
+    "name": "Science",
+    "slug": "science",
+    "description": "Scientific discoveries and discussions",
+    "icon": "\ud83d\udd2c",
+    "color": "#06B6D4",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "ef513f09-d25e-47a2-a674-f27799aa1782",
+    "name": "Art",
+    "slug": "art",
+    "description": "Art, design, and creativity",
+    "icon": "\ud83c\udfa8",
+    "color": "#EC4899",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  },
+  {
+    "id": "46135a9d-775d-4d9d-a920-2361ab8539e6",
+    "name": "Finance",
+    "slug": "finance",
+    "description": "Markets, crypto, and money",
+    "icon": "\ud83d\udcb0",
+    "color": "#10B981",
+    "created_at": "2026-01-13T21:13:07.343393+00:00"
+  }
+]

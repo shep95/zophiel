@@ -1,0 +1,10 @@
+# GPTBot
+User-agent: GPTBot
+Disallow: /
+
+# Host
+Host: https://www.palantir.com
+
+# Sitemaps
+Sitemap: https://www.palantir.com/sitemap.xml
+Sitemap: https://www.palantir.com/docs/sitemap.xml

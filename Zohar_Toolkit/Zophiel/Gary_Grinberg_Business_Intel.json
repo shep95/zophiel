@@ -1,0 +1,22 @@
+{
+    "target": "Gary Grinberg",
+    "scan_type": "Corporate Entity Search",
+    "findings": [
+        {
+            "title": "GG 33 Academy | Whop",
+            "url": "https://whop.com/discover/gg33-academy/",
+            "snippet": "GG 33 Academy . Hi, I'm Gary, founder of GG 33 Academy . I created this community to help people like you unlock the power of Numerology, Astrology, and holistic practices in a practical way.",
+            "scraped_data": null,
+            "verified_match": true,
+            "source_registry": "gg33_entity"
+        },
+        {
+            "title": "Garry The Numbers Guy (@ gg 33 academy ) | \u0438\u0441\u0442\u043e\u0440\u0438\u0438, Spotlight...",
+            "url": "https://www.snapchat.com/@gg33academy",
+            "snippet": "Business . Lens Studio.Garry The Numbers Guy. gg 33 academy\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 03.07.2025. Miami, Florida, USA.",
+            "scraped_data": null,
+            "verified_match": true,
+            "source_registry": "gg33_entity"
+        }
+    ]
+}

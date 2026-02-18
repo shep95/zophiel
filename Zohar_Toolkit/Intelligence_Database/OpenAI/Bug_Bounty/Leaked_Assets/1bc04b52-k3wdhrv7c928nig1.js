@@ -1,0 +1,2 @@
+function s(t){for(var n=[],e=String(t||""),r=e.indexOf(","),i=0,a,f;!a;)r===-1&&(r=e.length,a=!0),f=e.slice(i,r).trim(),(f||!a)&&n.push(f),i=r+1,r=e.indexOf(",",i);return n}function c(t,n){var e=n||{};return t[t.length-1]===""&&(t=t.concat("")),t.join((e.padRight?" ":"")+","+(e.padLeft===!1?"":" ")).trim()}const p=/[ \t\n\f\r]/g;function u(t){return typeof t=="object"?t.type==="text"?o(t.value):!1:o(t)}function o(t){return t.replace(p,"")===""}export{s as p,c as s,u as w};
+//# sourceMappingURL=1bc04b52-k3wdhrv7c928nig1.js.map
